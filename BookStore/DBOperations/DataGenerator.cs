@@ -14,8 +14,9 @@ namespace BookStore.DBOperations
             {
                 if (context.Books.Any())
                 {
-                    return;   
+                    return;
                 }
+
                 context.Genres.AddRange(
                 new Genre()
                 {
@@ -38,10 +39,10 @@ namespace BookStore.DBOperations
                 {
                     BookID = 1,
                     Title = "Lean Startup",
-                    GenreID = 0, // Personal Growth
+                    GenreID = 1, // Personal Growth
                     PageCount = 200,
-                    PublishDate = new DateTime(2001, 06, 12)
-
+                    PublishDate = new DateTime(2001, 06, 12),
+                    AuthorID = 1
                 },
                 new Book
                 {
@@ -49,7 +50,8 @@ namespace BookStore.DBOperations
                     Title = "Herland",
                     GenreID = 1, // Science Fiction
                     PageCount = 250,
-                    PublishDate = new DateTime(2010, 05, 23)
+                    PublishDate = new DateTime(2010, 05, 23),
+                    AuthorID = 2
                 },
                 new Book
                 {
@@ -57,7 +59,28 @@ namespace BookStore.DBOperations
                     Title = "Dune",
                     GenreID = 2, // Noval
                     PageCount = 540,
-                    PublishDate = new DateTime(2001, 12, 21)
+                    PublishDate = new DateTime(2001, 12, 21),
+                    AuthorID = 3
+                });
+
+                context.Authors.AddRange(
+                new Author
+                {
+                    Name = "Eric",
+                    Surname = "Ries",
+                    DateOfBirth = new DateTime(1978, 09, 22)
+                },
+                new Author
+                {
+                    Name = "Charlotte",
+                    Surname = "Gilman",
+                    DateOfBirth = new DateTime(1860, 08, 3)
+                },
+                new Author
+                {
+                    Name = "Frank",
+                    Surname = "Herbert",
+                    DateOfBirth = new DateTime(1920, 10, 08)
                 });
 
                 context.SaveChanges(); 

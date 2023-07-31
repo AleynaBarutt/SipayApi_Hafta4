@@ -1,7 +1,7 @@
 ﻿using BookStore.Operations.BookOperations.Queries.GetBookDetail;
 using FluentValidation;
 
-namespace BookStore.Validations.GetBookDetail
+namespace BookStore.Validations.BookValidations.GetBookDetail
 {
     public class GetBookDetailValidator : AbstractValidator<GetBookDetailQuery>
     {

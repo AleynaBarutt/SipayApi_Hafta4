@@ -1,7 +1,7 @@
 ﻿using BookStore.Operations.GenreOperations.Commands.UpdateGenre;
 using FluentValidation;
 
-namespace BookStore.Validations.UpdateGenre
+namespace BookStore.Validations.GenreValidations.UpdateGenre
 {
     public class UpdateGenreValidator : AbstractValidator<UpdateGenreCommand>
     {

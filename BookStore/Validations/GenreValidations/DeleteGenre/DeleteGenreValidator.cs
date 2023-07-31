@@ -1,7 +1,7 @@
 ﻿using BookStore.Operations.GenreOperations.Commands.DeleteGenre;
 using FluentValidation;
 
-namespace BookStore.Validations.DeleteGenre
+namespace BookStore.Validations.GenreValidations.DeleteGenre
 {
     public class DeleteGenreValidator : AbstractValidator<DeleteGenreCommand>
     {

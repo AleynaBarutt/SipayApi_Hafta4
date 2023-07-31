@@ -1,7 +1,7 @@
 ﻿using BookStore.Operations.GenreOperations.Queries.GetGenreDetail;
 using FluentValidation;
 
-namespace BookStore.Validations.GetGenreDetail
+namespace BookStore.Validations.GenreValidations.GetGenreDetail
 {
     public class GetGenreDetailValidator : AbstractValidator<GetGenreDetailQuery>
     {

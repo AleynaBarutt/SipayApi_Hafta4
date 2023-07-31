@@ -1,7 +1,7 @@
 ﻿using BookStore.Operations.BookOperations.Commands.UpdateBook;
 using FluentValidation;
 
-namespace BookStore.Validations.UpdateBook
+namespace BookStore.Validations.BookValidations.UpdateBook
 {
     public class UpdateBookValidator : AbstractValidator<UpdateBookCommand>
     {

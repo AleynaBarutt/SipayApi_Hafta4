@@ -1,10 +1,5 @@
 ﻿using AutoMapper;
 using BookStore.DBOperations;
-using BookStore.Validations.CreateBook;
-using BookStore.Validations.DeleteBook;
-using BookStore.Validations.GetBookDetail;
-using BookStore.Validations.GetBooks;
-using BookStore.Validations.UpdateBook;
 using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +13,10 @@ using BookStore.Operations.BookOperations.Commands.CreateBook;
 using BookStore.Operations.BookOperations.Commands.DeleteBook;
 using BookStore.Operations.BookOperations.Commands.UpdateBook;
 using BookStore.Operations.BookOperations.Queries.GetBooks;
+using BookStore.Validations.BookValidations.CreateBook;
+using BookStore.Validations.BookValidations.DeleteBook;
+using BookStore.Validations.BookValidations.GetBooks;
+using BookStore.Validations.BookValidations.UpdateBook;
 
 namespace BookStore.Controllers
 {

@@ -9,6 +9,10 @@ using static BookStore.Operations.GenreOperations.Commands.UpdateGenre.UpdateGen
 using BookStore.Operations.BookOperations.Commands.CreateBook;
 using BookStore.Operations.BookOperations.Queries.GetBookDetail;
 using static BookStore.Operations.BookOperations.Commands.UpdateBook.UpdateBookCommand;
+using static BookStore.Operations.AuthorOperations.Queries.GetAuthors.GetAuthorsQuery;
+using static BookStore.Operations.AuthorOperations.Queries.GetAuthorDetail.GetAuthorDetailQuery;
+using BookStore.Operations.AuthorOperations.Commands.CreateAuthorCommand;
+using static BookStore.Operations.AuthorOperations.Commands.UpdateAuthorCommand.UpdateAuthorCommand;
 
 namespace BookStore.Common
 {
@@ -26,6 +30,11 @@ namespace BookStore.Common
             CreateMap<Genre, GenreDetailViewModel>();
             CreateMap<CreateGenreViewModel, Genre>();
             CreateMap<UpdateGenreViewModel, Genre>();
+
+            CreateMap<Author, AuthorsViewModel>();
+            CreateMap<Author, AuthorDetailViewModel>();
+            CreateMap<CreateAuthorViewModel, Author>();
+            CreateMap<UpdateAuthorViewModel, Author>();
         }
     }
 }
